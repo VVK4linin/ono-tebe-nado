@@ -1,1 +1,36 @@
 /* место для вашего кода */
+.header {
+    padding: 92px 24px 96px;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+}
+
+.header__links-list {
+    font-size: 18px;
+    list-style-type: circle;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.header__links-list-item {
+    list-style-type: none;
+}
+
+.header__logo-image {
+    width: 148px;
+}
+
+address {
+    padding: 5px 59px 2px;
+    font-size: 18px;
+    font-style: normal;
+    display: grid;
+    justify-content: end; 
+}
+
+.header__address {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
