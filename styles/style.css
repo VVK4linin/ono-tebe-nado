@@ -200,10 +200,6 @@ address {
   font-weight: 400;
 }
 
-.about {
-  /* display: flex; */
-}
-
 .about__logo {
   margin-left: 47px;
   margin-top: 35px;
