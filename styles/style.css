@@ -7,7 +7,7 @@
 }
 
 .header {
-  padding: 92px 24px 96px;
+  margin: 92px 24px 96px;
   color: black;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -17,14 +17,30 @@
   font-weight: 400;
 }
 
+.header__menu {
+  padding: 44px 36px 39px 27px;
+}
+
 .header__links-list {
-  list-style-type: circle;
   display: flex;
-  justify-content: space-evenly;
+  letter-spacing: 0.01em;
+  justify-content: space-between;
 }
 
 .header__links-list-item {
-  list-style-type: none;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  padding-top: 0px;
 }
 
 .header__logo-image {
@@ -33,28 +49,30 @@
 }
 
 address {
-  padding: 2px 63px;
   font-style: normal;
   display: grid;
-  row-gap: 2px;
-  justify-content: end;
+  text-underline-offset: 5px;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .header__address {
-  text-underline-offset: 3px;
+  padding-top: 7px;
+  padding-right: 64px;
+  justify-content: end;
 }
 
 .cover {
   position: relative;
-  padding: 165px 50px 51px;
+  padding: 165px 50px 50px;
+  background-position: center;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .cover__title {
-  display: flex;
-  flex-direction: column;
   position: relative;
   text-transform: uppercase;
   line-height: 115px;
@@ -63,31 +81,32 @@ address {
   color: white;
 }
 
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
 .aligned-text {
+  margin-top: 20px;
+  display: block;
   letter-spacing: 0.3em;
+  line-height: 100px;
 }
 
 .aligned-text_center {
-  margin-top: 0.11em;
   text-align: center;
 }
 
 .aligned-text_right {
-  margin-top: 0.05em;
   text-align: end;
 }
 
-.letter-spacing-extended {
-  letter-spacing: 0.3em;
-}
-
 .no-letter-spacing {
-  letter-spacing: 0.6em;
+  letter-spacing: initial;
 }
 
 .cover__description {
   position: relative;
-  margin-top: 130px;
+  margin-top: 135px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -238,4 +257,40 @@ address {
   line-height: 24px;
   font-size: 20px;
   font-weight: 400;
+}
+
+.footer {
+  margin: 0px 50px 88px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__menu {
+  padding-left: 36px;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 21px;
+  font-size: 18px;
+  font-weight: 400;
+  list-style: none;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list-item {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 95px 97px 49px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
 }
