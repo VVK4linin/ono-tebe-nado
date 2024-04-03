@@ -243,6 +243,7 @@ address {
 }
 
 .about__title {
+  margin-bottom: 100px;
   padding-top: 136px;
   padding-left: 8px;
   text-transform: uppercase;
@@ -252,11 +253,13 @@ address {
 }
 
 .about__text {
-  margin-top: 100px;
+  display: flex;
+  gap: 25px;
   text-transform: none;
   line-height: 24px;
   font-size: 20px;
   font-weight: 400;
+  flex-direction: column;
 }
 
 .footer {
