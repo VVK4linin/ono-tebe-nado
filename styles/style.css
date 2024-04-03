@@ -151,8 +151,8 @@ address {
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
-  flex-grow: 1;
   margin: 27px 24px 0;
   list-style: none;
 }
@@ -160,6 +160,7 @@ address {
 .lots__card-list-item {
   min-height: 563px;
   width: 334px;
+  flex-grow: 1
 }
 
 .card-link {
@@ -199,7 +200,12 @@ address {
   font-weight: 400;
 }
 
+.lots__look-more-link {
+  max-width: fit-content;
+}
+
 .card_type_film {
+  flex-grow: 1;
   background-image: url(../images/card-lot-01.jpg);
 }
 
@@ -289,8 +295,8 @@ address {
 
 .footer__social-list-item {
   list-style: none;
-  display: grid;
-  grid-template-columns: 95px 97px 49px;
+  display: flex;
+  gap: 48px;
 }
 
 .footer__social-icon {
